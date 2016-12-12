@@ -26,7 +26,7 @@ public class TestResourceImpl implements TestResource {
 
     @Override
     public Response test4(String id) {
-        UriBuilder builder = UriBuilder.fromResource(TestResource.class);
+        UriBuilder builder = UriBuilder.fromPath(TEST4_ROUTE);
         builder.path(id);
         return Response.created(builder.build()).build();
     }
