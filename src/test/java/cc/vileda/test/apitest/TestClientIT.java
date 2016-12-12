@@ -9,7 +9,7 @@ import java.net.URI;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
 
-public class TestClientTest {
+public class TestClientIT {
 
     private String baseUri = "http://localhost:8080/api-test";
     private TestClient testClient = new TestClient(baseUri);
